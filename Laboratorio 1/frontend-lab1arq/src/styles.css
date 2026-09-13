@@ -1,0 +1,34 @@
+/*Estilos sencillos para mantener una interfaz limpia y legible.*/
+* { box-sizing: border-box; }
+body { margin: 0; background: #f4f7fb; color: #172033; font-family: Arial, sans-serif; }
+button, input { font: inherit; }
+button { cursor: pointer; border: 0; border-radius: 8px; padding: 10px 14px; background: #183d78; color: white; font-weight: 700; }
+button:hover { opacity: .9; }
+button:disabled { cursor: not-allowed; opacity: .55; }
+.app { max-width: 1180px; margin: 0 auto; padding: 34px 20px; }
+header { display: flex; align-items: center; gap: 14px; margin-bottom: 26px; }
+h1, h2, p { margin-top: 0; }
+h1 { margin-bottom: 4px; }
+header p { color: #64748b; margin-bottom: 0; }
+.logo { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 12px; background: #f5c842; color: #183d78; font-weight: 800; font-size: 24px; }
+nav { display: flex; gap: 8px; border-bottom: 1px solid #dce3ed; margin-bottom: 22px; padding-bottom: 14px; }
+nav button { background: transparent; color: #536276; }
+nav button.active { background: #183d78; color: #fff; }
+.grid { display: grid; gap: 20px; }
+.two-columns { grid-template-columns: minmax(270px, .8fr) minmax(480px, 1.6fr); }
+.card { padding: 24px; background: #fff; border: 1px solid #e3e9f1; border-radius: 14px; box-shadow: 0 3px 12px #18233d0a; }
+.narrow { max-width: 520px; }
+.form { display: grid; gap: 12px; }
+.inline-form { display: flex; gap: 12px; margin-bottom: 22px; }
+input { width: 100%; padding: 11px 12px; border: 1px solid #cad4e0; border-radius: 8px; outline-color: #183d78; }
+.secondary { background: #e8eef7; color: #183d78; }
+.danger { background: #b73535; }
+.small { padding: 7px 10px; font-size: 12px; }
+.heading-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.table-wrapper { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; min-width: 520px; }
+th, td { text-align: left; padding: 13px 10px; border-bottom: 1px solid #e5eaf0; }
+th { color: #5a687b; font-size: 13px; }
+.actions { display: flex; gap: 7px; }
+.message { padding: 12px 14px; border-left: 4px solid #f5c842; background: #fff8d9; border-radius: 6px; }
+@media (max-width: 760px) { .two-columns { grid-template-columns: 1fr; } .inline-form { flex-direction: column; } nav { overflow-x: auto; } }
